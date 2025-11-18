@@ -1,0 +1,60 @@
+body {
+  background-color: #1a1a2e;
+  color: #ff69b4;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  padding: 2rem;
+}
+
+.logo {
+  width: 100px;
+  filter: drop-shadow(0 0 15px #ff69b4);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  text-shadow: 0 0 15px #ff69b4;
+}
+
+.controls button {
+  background-color: #ff69b4;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff69b4;
+}
+
+.flashcard {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 2px solid #ff69b4;
+  box-shadow: 0 0 20px #ff69b4;
+  display: inline-block;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* Sparkle animation */
+@keyframes sparkle {
+  0% { box-shadow: 0 0 10px #ff69b4; }
+  25% { box-shadow: 0 0 20px #ff69b4, 0 0 30px #ff69b4; }
+  50% { box-shadow: 0 0 40px #ff69b4, 0 0 60px #ff69b4; }
+  75% { box-shadow: 0 0 20px #ff69b4, 0 0 30px #ff69b4; }
+  100% { box-shadow: 0 0 10px #ff69b4; }
+}
+
+.flashcard.sparkle {
+  animation: sparkle 1s ease-out;
+}
